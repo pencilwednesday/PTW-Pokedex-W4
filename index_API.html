@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Poke Type Dex</title>
+    <link rel="stylesheet" href="style_API.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <section id="landing-page">
+      <nav>
+        <figure>
+          <img
+            id="pokemon-logo"
+            src="/assets/pokemon-logo-png-pokemon-icon-transparent.png"
+            alt=""
+          />
+        </figure>
+        <ul class="nav__link--list">
+          <li class="nav__link">
+            <a
+              href="/Tutorial ePortfolio/index.html"
+              class="nav__link--anchor link__hover-effect link__hover-effect--black"
+              >About</a
+            >
+          </li>
+          <li class="nav__link">
+            <a
+              href="/Tutorial ePortfolio/index.html#projects"
+              class="nav__link--anchor link__hover-effect link__hover-effect--black"
+              >Projects</a
+            >
+          </li>
+          <li class="nav__link">
+            <a
+              href="/Tutorial ePortfolio/index.html"
+              class="nav__link--anchor link__hover-effect link__hover-effect--black"
+              >Contact</a
+            >
+          </li>
+          <li class="nav__link">
+            <a
+              href="#"
+              class="nav__link--anchor link__hover-effect link__hover-effect--black"
+              ><i class="fa-solid fa-adjust"></i
+            ></a>
+          </li>
+        </ul>
+      </nav>
+
+      <body>
+        <div class="container">
+          <div class="dexContainer">
+            <img src="/assets/dexTech.png" class="dexTech" alt="" />
+            <div class="pokeInfo">
+              <input
+                type="text"
+                id="pokemonName"
+                placeholder="Enter Name or Pokedex #"
+              />
+              <button class="fetchButton" onclick="fetchData()">Fetch Pokemon</button> <br />
+              <div id="errorMessage"></div>
+              <div class="infoContainer">
+                <img
+                  src=""
+                  alt="Pokemon Sprite"
+                  id="pokemonSprite"
+                  style="display: none"
+                />
+                <div>
+                  <div id="pokeName"></div>
+                  <br />
+                  <div id="pokemonID"></div>
+                  <br />
+                  <div id="pokemonType"></div>
+                  <br />
+                  <div id="pokemonCounters"></div>
+                  <br />
+                </div>
+                <div id="results" style="display: none">
+                  <h2>Weaknesses</h2>
+                  <ul id="weaknesses"></ul>
+                </div>
+              </div>
+            </div>
+            <button class="resetButton" onclick="resetFields()">Reset</button>
+          </div>
+        </div>
+
+        <script src="/index_API.js"></script>
+      </body>
+    </section>
+
+    <footer>
+      <div class="container">
+        <div class="row footer__row">
+          <figure>
+            <img
+              class="footer__logo--img"
+              src="/assets/pokemon-logo-png-pokemon-icon-transparent.png"
+              alt=""
+            />
+          </figure>
+          <div class="footer__social--list">
+            <a
+              href="http://github.com/pencilwednesday"
+              class="footer__social--link link__hover-effect link__hover-effect--white"
+              target="_blank"
+            >
+              GitHub
+            </a>
+            <a
+              href="http://linkedin.com"
+              class="footer__social--link link__hover-effect link__hover-effect--white"
+            >
+              LinkedIn
+            </a>
+            <a
+              href="/Tutorial ePortfolio/index.html"
+              class="footer__social--link link__hover-effect link__hover-effect--white"
+            >
+              Contact
+            </a>
+            <a
+              href="/assets/David Bragg Resume.pdf"
+              class="footer__social--link link__hover-effect link__hover-effect--white"
+              target="_blank"
+            >
+              Resume
+            </a>
+          </div>
+          <div class="footer__copyright">
+            Made by Raymond Cabaluna <br />
+            Copyright &copy 2025
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
