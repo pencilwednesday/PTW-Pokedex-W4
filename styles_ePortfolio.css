@@ -410,13 +410,17 @@ footer {
 }
 
 .footer__logo--img {
-    width: 300px;
+    width: 164px;
 }
 
 .footer__social--link,
 .footer__copyright,
 .footer__logo--popper {
     color: #fff;
+}
+
+.footer__copyright {
+    text-align: center;
 }
 
 .footer__logo--popper {
