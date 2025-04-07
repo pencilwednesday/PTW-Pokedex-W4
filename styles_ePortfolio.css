@@ -460,25 +460,38 @@ footer {
     .about-me__infor--para {
         font-size: 18px;
     }
-}
 
-.language {
-    width: calc(100% / 2);
-}
-
-.project__description--para {
-    font-size: 14px;
-}
-
-.project__description {
-    left: 30px;
-    padding-right: 30px;
+    .language {
+        width: calc(100% / 2);
+    }
+    
+    .project__description--para {
+        font-size: 14px;
+    }
+    
+    .project__description {
+        left: 30px;
+        padding-right: 30px;
+    }
 }
 
 /* SMALL PHONES */
 @media (max-width: 576px) {
     .nav__link:not(:last-child) {
         display: none;
+    }
+
+    .about-me__picture--mask {
+        width: 162px;
+        height: 162px;
+    }
+
+    .about-me__info--para {
+        font-size: 18px;
+    }
+
+    .language__img {
+        width: 60%;
     }
 
     .project__description {
@@ -505,5 +518,9 @@ footer {
     .project__description--sub-title {
         text-align: center;
         margin: 12px 0;
+    }
+
+    .footer__logo--img {
+        width: 256px;
     }
 }
