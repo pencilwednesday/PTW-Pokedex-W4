@@ -88,7 +88,9 @@ LANGING PAGE
 #pokemonSprite {
   display: block; 
   margin: 0 auto; 
-  height: 250px; 
+  height: 250px;
+  position: relative; 
+  bottom: 55px;
 }
 
 .pokeInfo {
@@ -199,6 +201,19 @@ footer {
 
 /* tables, large smart phones */
 
+@media (max-width: 992px) {
+  .pokeInfo {
+    width: 100%;
+    max-width: 550px;
+    bottom: 120px;
+  }
+
+  #pokemonSprite {
+    position: relative;
+    bottom: 55px;
+  }
+}
+
 @media (max-width: 768px) {
   .pokeInfo {
     width: 100%;
@@ -208,18 +223,13 @@ footer {
     left: 50%;
     transform: translate(-50%, -50%);
   }
+
   #pokemonSprite {
     display: block; 
     margin: 0 auto; 
-    height: 150px; 
-  }
-}
-
-@media (max-width: 768px) {
-  .pokeInfo {
-    width: 100%;
-    max-width: 750px;
-    font-size: 12px;
+    height: 150px;
+    position: relative;
+    bottom: 55px;
   }
 }
 
@@ -228,7 +238,21 @@ footer {
 @media (max-width: 576px) {
   .pokeInfo {
     width: 100%;
-    max-width: 450px;
-    font-size: 5px;
+    max-width: 350px;
+    font-size: 12px;
+    bottom: 45px
   }
+
+  .fetchButton {
+    font-size: 10px;
+  }
+
+  #pokemonSprite {
+    display: block; 
+    margin: 0 auto; 
+    height: 100px;
+    position: relative;
+    bottom: 30px;
+  }
+
  }

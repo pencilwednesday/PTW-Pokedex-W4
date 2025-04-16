@@ -447,7 +447,7 @@ footer {
     opacity: 1;
 }
 
-/* Small phones, tablets, large smartphones */
+/* tablets, large smartphones */
 @media (max-width: 768px) {
     nav {
         height: 68px;
